@@ -1,30 +1,28 @@
 import React, { Component } from 'react';
 import './SearchBar.css';
 
-class SearchBar extends Component {
-    constructor(props) {
-      super(props);
-      this.state = {
-        input: ''
-      };
-    }
-
-    render() {
-        return(
-            <div>
-                <input
-                    type="text"
-                    value={this.state.item}
-                    name="item"
-                    onChange={this.handleChanges}
-                />
-                <button>Search</button>
+const SearchBar = () => {
+    return (
+        <div className="search-bar-wrapper">
+            <div className="image-wrapper">
+                <a href="#" className="logo-image">#</a>
             </div>
-        )
-    }
-
-
-
+            <div>
+                <input className ="search-input" type="text" placeholder="Search" />
+            </div>
+            <div className="social-wrapper">
+                <div className="social">
+                    <a className="fa fa-compass">#</a>
+                </div>
+                <div className="social">
+                    <a className="fa fa-heart">#</a>
+                </div>
+                <div className="social">
+                    <a className="fa fa-user-circle">#</a>
+                </div>
+            </div>
+        </div>
+    )
 }
 
 export default SearchBar;
