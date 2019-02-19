@@ -1,18 +1,14 @@
 import React from 'react';
-import CommentSection from '../CommentSection/CommentSection';
+import Post from './Post';
 import './PostContainer.css';
 
 const PostContainer = props => {
-    return(
-      <div className='post-container'>
-        <header>
-          <img src={props.data.thumbnailUrl} alt="User Thumbnail"/>
-          <p> {props.data.username} </p>
-        </header>
-        <img className='post' src={props.data.imageUrl} alt="Post"/>
-        <CommentSection data={props.data}/>
+    return (
+      <div className="post-container-wrapper">
+        {props.data.map(p => <Post key={p.imageUrl} post={p} />)}
       </div>
-    )
-  }
+    );
+  };
   
-  export default PostContainer;
+
+export default PostContainer;

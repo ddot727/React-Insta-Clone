@@ -1,20 +1,30 @@
-import React from 'react';
+import React, { Component } from 'react';
+import './SearchBar.css';
 
- const SearchBar = props => {
-  return (
-    <nav>
-      <div className="logo">
-        <a href="#">Logo here</a>
-        <h1>Instagram</h1>
-      </div>
-      <input className="search" type="text"/>
-      <div className="icons">
-        <a href="#">Explore</a>
-        <a href="#">Heart</a>
-        <a href="#">Profile</a>
-      </div>
-    </nav>
-  );
-};
+class SearchBar extends Component {
+    constructor(props) {
+      super(props);
+      this.state = {
+        input: ''
+      };
+    }
 
- export default SearchBar;
+    render() {
+        return(
+            <div>
+                <input
+                    type="text"
+                    value={this.state.item}
+                    name="item"
+                    onChange={this.handleChanges}
+                />
+                <button>Search</button>
+            </div>
+        )
+    }
+
+
+
+}
+
+export default SearchBar;
