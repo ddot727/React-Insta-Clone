@@ -28,9 +28,11 @@
   .post-thumb {
     height: 100%;
     border-radius: 50%;
-    padding: 5px;
+    padding: 10px;
   }
 
   .post-username {
-      line-height: 45px;
+    line-height: 46px;
+    font-weight: 500;
+    font-size: 14px;
   }

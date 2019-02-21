@@ -22,7 +22,7 @@ class App extends Component {
     return (
       <div className="app">
         <SearchBar />
-        <PostContainer data={this.state.data.dummyData} />
+        <PostContainer data={this.state.data} />
       </div>
     );
   }

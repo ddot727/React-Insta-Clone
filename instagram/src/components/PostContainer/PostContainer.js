@@ -6,7 +6,7 @@ const PostContainer = props => {
     return (
       <div className="post-container-wrapper">
         {props.data.map(p => 
-        <Post key={p.imageUrl} post={p} />)}
+        <Post post={p} key={p.imageUrl} />)}
       </div>
     );
   };
