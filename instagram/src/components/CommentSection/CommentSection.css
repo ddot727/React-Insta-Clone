@@ -1,15 +1,26 @@
 .comment-container {
-    text-align: left;
-    padding: 2px;
-    margin-left: 4px;
-  }
-  
-  .comment {
-    font-weight: 300;
-    font-size: 14px;
-  }
-  
-  .username {
-    font-weight: 500;
-    font-size: 12px;
-  }
+  text-align: left;
+  padding: 2px;
+  margin-left: 4px;
+}
+
+.comment-section-container {
+  margin: 0 10px;
+}
+
+.comment {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.comment-input {
+  width: 100%;
+  border: none;
+  border-top: .3px solid lightgray;
+  padding: 5px;
+}
+
+.username {
+  font-weight: 500;
+  font-size: 12px;
+}

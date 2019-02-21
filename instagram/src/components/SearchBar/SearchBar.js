@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './SearchBar.css';
 
 const SearchBar = () => {
@@ -6,6 +6,9 @@ const SearchBar = () => {
         <div className="search-bar-wrapper">
             <div className="image-wrapper">
                 <a href="#" className="logo-image">#</a>
+            </div>
+            <div>
+                <p className="insta-title">Instagram</p>
             </div>
             <div>
                 <input className ="search-input" type="text" placeholder="Search" />
