@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Comment from './Comment';
 import CommentForm from './CommentForm';
+import Likes from './Likes';
 
 class CommentSection extends Component {
     constructor(props) {
@@ -9,6 +10,7 @@ class CommentSection extends Component {
         this.state = {
             comments: props.comments,
             comment: '',
+            likes: props.likes,
         }
     }
     
@@ -33,9 +35,8 @@ class CommentSection extends Component {
     render() {
         return (
             <div className="comment-section-container">
-            <a href="#">#</a>
-            <a href="#">#</a>
-            
+            <Likes likes={this.state.likes} />    
+
             {this.state.comments.map((comment, i) => <Comment key={i} comment={comment} />)}
             <CommentForm 
                 comment={this.state.comment}
