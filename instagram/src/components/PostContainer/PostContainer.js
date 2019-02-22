@@ -33,8 +33,3 @@ PostContainer.propTypes = {
 }
 
 export default PostContainer;
-
-// <div className="post-container-wrapper">
-      //   {props.data.map(p => 
-      //   <Post post={p} key={p.imageUrl} />)}
-      // </div>
