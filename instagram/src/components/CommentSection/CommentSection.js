@@ -21,7 +21,6 @@ class CommentSection extends Component {
     }
     
     handleSubmit = e => {
-        debugger
         e.preventDefault();
         const newComment = {
             username: 'Dat Boi',
